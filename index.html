@@ -1,0 +1,116 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>YuganshWeb</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <h2 class="logo">Yugansh Goyal</h2>
+        <ul>
+            <li onclick="scrollToSection('about')">About Me</li>
+            <li onclick="scrollToSection('projects')">Projects</li>
+            <li onclick="scrollToSection('blog')">Blog</li>
+            <li onclick="scrollToSection('skills')">Skills</li>
+            <li onclick="scrollToSection('contact')">Contact</li>
+        </ul>
+        <button class="resume-btn" onclick="scrollToSection('resume')">Resume</button>
+    </div>
+
+    <!-- Main Section -->
+    <div class="main">
+        
+        <!-- Image Section -->
+        <div class="image-box">
+            <img src="MyPhoto.jpeg" alt="Profile Photo">
+        </div>
+
+        <!-- Text Section -->
+        <div id="about" class="About-text">
+            <h1>My name is Yugansh Goyal.</h1>
+            <p>I am currently a student of Gautam Buddha University 
+            pursuing a Bachelor's degree in Computer Science and Engineering.<br>
+            I am passionate about coding and web development.<br>
+            This time I am learning web development and Java programming by the help of college and 
+            with my self using Youtube and other platforms.<br>
+            this is my personal website where I showcase my projects and share my thoughts through blogs.
+            </p>
+            <button class="contact-btn" onclick="showContact()">Contact Me</button>
+        </div>
+    </div>
+    <div id="projects" class="Projects-text">
+        <h1 style="font-size: 54px;"># Projects Section</h1>
+        <p>Made this portfolio website to showcase my skills and projects.<br>
+           Has done many projects in C, python and Java programming.</p>
+           <p2>Some of my projects are:</p2>
+           <ul>
+            <li>Library Management System in C</li>
+            <li>Flight Management System in python</li>
+            <li>Student Management System in python</li>
+            <li>Simple Calculator in Python</li>
+            <li>Now I am working on a Web Development Project and IoT-Based Smart Air Pollution Extraction and Carbon Ink Generation System <br>
+            with my college friends. </li>
+            <p>and many more...</p>
+           </ul>If you want to know more about my projects, please contact me.</p>
+    </div>
+
+    <div id="blog" class="Blog-text">
+        <h1># Blog Section</h1>
+        <p>Welcome to my blog section! Here, I share my thoughts, experiences, and insights on various topics related to technology, programming, and web development.<br>
+        Stay tuned for regular updates and feel free to reach out if you have any questions or suggestions!</p>
+    </div>
+    <div id="skills" class="skills-text">
+        <h1># Skills Section</h1>
+        <p>Here are some of my skills:</p>
+        <ul>
+            <li>Programming Languages: C, Python, Java</li>
+            <li>Web Development: HTML, CSS, JavaScript</li>
+            <li>Version Control: Git, GitHub</li>
+            <li>Problem Solving and Algorithms</li>
+            <li>Dance, Writing Songs and Poetry</li>
+            <p>and many more...</p>
+            <p>If you want to know more about my skills, please contact me.</p>
+        </ul>
+    </div>
+    
+    <div id="resume" class="Resume-text">
+        <h1># Resume</h1>
+        <p>You can download my resume from the link below:</p>
+        <a href="Yugansh_Goyal_Resume.pdf" download>Download Resume</a>
+    </div>
+        <div id="contact" class="Contact-text">
+        <h1># Contact Me</h1>
+        <p>You can reach me through the following platforms:</p>
+        <ul>
+            <li>Email: yuganshgoyal2007@gmail.com</li>
+            <li>LinkedIn: <linkedin class="com" onclick="window.location.href='https://www.linkedin.com/in/yugansh-goyal2007'">
+            <in> yugansh-goyal2007</in></linkedin></li>
+            <li>Instagram: <instagram class="com" onclick="window.location.href='https://www.instagram.com/yugansh_goyalvines?igsh=MXg2M3J5YXdmcDNucQ=='">
+            <in> yugansh_goyalvines</instagram></in></li>
+            <li>GitHub: <github class="com" onclick="window.location.href='https://www.github.com/YuganshGoyal2007'">
+            <in> YuganshGoyal2007</github></in></li>
+            <li>Phone: +91-9548425711</li>
+    </ul>
+  <br><br><br><br><br><br><br><br><br>
+
+
+    </div>
+      <p style="text-align: center;">&copy; 2024 Yugansh Goyal. All rights reserved.<br>
+        I have made this web by my own so plst give me credits if you are using any part of this web.<br>
+        If ther is any problem regarding this web please contact me.<br>
+        And if you want to any suggestion so pls give me feedback.on my emailor contact me on my social media handles.<br>
+        </p>
+        <h2 style="text-align: center;">   Thank You! </h2>
+
+    <script>
+        function scrollToSection(id) {
+            document.getElementById(id).scrollIntoView({
+                behavior: 'smooth'
+    });
+}
+</script>
+</body>
+</html>

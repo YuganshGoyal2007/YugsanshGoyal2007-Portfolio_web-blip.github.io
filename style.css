@@ -1,0 +1,165 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #2f2f2f;
+    color: white;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    align-items: center;
+    padding: 25px 40px;
+}
+.navbar button {
+    margin-right: 15px;
+    margin-left: 60px;
+}
+.logo {
+    flex: 1;
+    font-size: 48px;
+    border: black;
+    stroke-width: 8px;
+    cursor: pointer;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 80px;
+}
+
+.navbar ul li {
+    cursor: pointer;
+}
+
+.resume-btn {
+    padding: 15px 16px;
+    border: black;
+    background-color: #bdbdbd;
+    cursor: pointer;
+}
+
+/* Main section */
+.main {
+    display: flex;
+    padding: 60px;
+}
+
+/* Image */
+.image-box img {
+    width: 350px;
+    border-radius: 5px;
+}
+
+/* Content */
+.About-text{
+    margin-left: 60px;
+    margin-top: 80px;
+}
+
+.content h1 {
+    font-size: 40px;
+}
+
+.content p {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.contact-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #bdbdbd;
+    border: none;
+    cursor: pointer;
+}
+.Projects-text{
+    margin-left: 398px;
+}
+.Projects-text h1 {
+    font-size: 40px;
+    margin-top: 80px;
+}
+.Projects-text p {
+    font-size: 18px;
+    margin-top: 10px;
+}
+.project-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #bdbdbd;
+    border: none;
+    cursor: pointer;
+}
+.Contact-text{
+    margin-left: 388px;
+}
+.Contact-text h1 {
+    font-size: 40px;
+    margin-top: 80px;
+}
+.Contact-text p {
+    font-size: 18px;
+    margin-top: 10px;
+}
+.Contact-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #bdbdbd;
+    border: none;
+    cursor: pointer;
+}
+.Blog-text{
+    margin-left: 388px;
+}
+.Blog-text h1 {
+    font-size: 40px;
+    margin-top: 80px;
+}
+.Blog-text p {
+    font-size: 18px;
+    margin-top: 10px;
+}
+.Blog-btn{
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #bdbdbd;
+    border: none;
+    cursor: pointer;
+}.skills-text{
+    margin-left: 388px;
+}
+.skills-text h1 {
+    font-size: 40px;
+    margin-top: 80px;
+}
+.skills-text p {
+    font-size: 18px;
+    margin-top: 10px;
+}
+.skills-btn{
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #bdbdbd;
+    border: none;
+    cursor: pointer;
+}
+.Resume-text{
+    margin-left: 388px;
+}
+.Resume-text h1 {
+    font-size: 40px;
+    margin-top: 80px;
+}
+.Resume-text p {
+    font-size: 18px;
+    margin-top: 10px;
+}
+.Resume-btn{
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #bdbdbd;
+    border: none;
+    cursor: pointer;
+}
