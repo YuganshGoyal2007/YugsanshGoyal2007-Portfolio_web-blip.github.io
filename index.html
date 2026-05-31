@@ -1,116 +1,476 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>YuganshWeb</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yugansh Goyal | Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <!-- Navbar -->
-    <div class="navbar">
-        <h2 class="logo">Yugansh Goyal</h2>
-        <ul>
-            <li onclick="scrollToSection('about')">About Me</li>
-            <li onclick="scrollToSection('projects')">Projects</li>
-            <li onclick="scrollToSection('blog')">Blog</li>
-            <li onclick="scrollToSection('skills')">Skills</li>
-            <li onclick="scrollToSection('contact')">Contact</li>
-        </ul>
-        <button class="resume-btn" onclick="scrollToSection('resume')">Resume</button>
+    <div class="ambient-stage" aria-hidden="true">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
     </div>
 
-    <!-- Main Section -->
-    <div class="main">
-        
-        <!-- Image Section -->
-        <div class="image-box">
-            <img src="MyPhoto.jpeg" alt="Profile Photo">
+    <div class="logo-intro" aria-hidden="true">
+        <div class="logo-flip-card">
+            <div class="logo-face logo-front">
+                <img src="MyPhoto.jpeg" alt="">
+            </div>
+            <div class="logo-face logo-back">
+                <strong>YUGANSH</strong>
+                <span>GOYAL</span>
+            </div>
         </div>
-
-        <!-- Text Section -->
-        <div id="about" class="About-text">
-            <h1>My name is Yugansh Goyal.</h1>
-            <p>I am currently a student of Gautam Buddha University 
-            pursuing a Bachelor's degree in Computer Science and Engineering.<br>
-            I am passionate about coding and web development.<br>
-            This time I am learning web development and Java programming by the help of college and 
-            with my self using Youtube and other platforms.<br>
-            this is my personal website where I showcase my projects and share my thoughts through blogs.
-            </p>
-            <button class="contact-btn" onclick="showContact()">Contact Me</button>
-        </div>
-    </div>
-    <div id="projects" class="Projects-text">
-        <h1 style="font-size: 54px;"># Projects Section</h1>
-        <p>Made this portfolio website to showcase my skills and projects.<br>
-           Has done many projects in C, python and Java programming.</p>
-           <p2>Some of my projects are:</p2>
-           <ul>
-            <li>Library Management System in C</li>
-            <li>Flight Management System in python</li>
-            <li>Student Management System in python</li>
-            <li>Simple Calculator in Python</li>
-            <li>Now I am working on a Web Development Project and IoT-Based Smart Air Pollution Extraction and Carbon Ink Generation System <br>
-            with my college friends. </li>
-            <p>and many more...</p>
-           </ul>If you want to know more about my projects, please contact me.</p>
+        <p>Opening Portfolio</p>
     </div>
 
-    <div id="blog" class="Blog-text">
-        <h1># Blog Section</h1>
-        <p>Welcome to my blog section! Here, I share my thoughts, experiences, and insights on various topics related to technology, programming, and web development.<br>
-        Stay tuned for regular updates and feel free to reach out if you have any questions or suggestions!</p>
-    </div>
-    <div id="skills" class="skills-text">
-        <h1># Skills Section</h1>
-        <p>Here are some of my skills:</p>
-        <ul>
-            <li>Programming Languages: C, Python, Java</li>
-            <li>Web Development: HTML, CSS, JavaScript</li>
-            <li>Version Control: Git, GitHub</li>
-            <li>Problem Solving and Algorithms</li>
-            <li>Dance, Writing Songs and Poetry</li>
-            <p>and many more...</p>
-            <p>If you want to know more about my skills, please contact me.</p>
-        </ul>
-    </div>
-    
-    <div id="resume" class="Resume-text">
-        <h1># Resume</h1>
-        <p>You can download my resume from the link below:</p>
-        <a href="Yugansh_Goyal_Resume.pdf" download>Download Resume</a>
-    </div>
-        <div id="contact" class="Contact-text">
-        <h1># Contact Me</h1>
-        <p>You can reach me through the following platforms:</p>
-        <ul>
-            <li>Email: yuganshgoyal2007@gmail.com</li>
-            <li>LinkedIn: <linkedin class="com" onclick="window.location.href='https://www.linkedin.com/in/yugansh-goyal2007'">
-            <in> yugansh-goyal2007</in></linkedin></li>
-            <li>Instagram: <instagram class="com" onclick="window.location.href='https://www.instagram.com/yugansh_goyalvines?igsh=MXg2M3J5YXdmcDNucQ=='">
-            <in> yugansh_goyalvines</instagram></in></li>
-            <li>GitHub: <github class="com" onclick="window.location.href='https://www.github.com/YuganshGoyal2007'">
-            <in> YuganshGoyal2007</github></in></li>
-            <li>Phone: +91-9548425711</li>
-    </ul>
-  <br><br><br><br><br><br><br><br><br>
+    <div class="page-shell">
+        <header class="navbar">
+            <a class="brand" href="#home" aria-label="Yugansh Goyal home">
+                <span class="brand-mark"><img src="MyPhoto.jpeg" alt=""></span>
+                <span>YUGANSH GOYAL</span>
+            </a>
 
+            <nav class="nav-links" aria-label="Primary navigation">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#skills">Skills</a>
+                <a href="#blog">Blog</a>
+                <a href="#contact">Contact</a>
+            </nav>
 
+            <a class="nav-cta" href="Yugansh_Goyal_Resume.pdf" download>Resume</a>
+        </header>
+
+        <main>
+            <section id="home" class="hero panel">
+                <div class="hero-copy">
+                    <p class="eyebrow">Computer Science Student</p>
+                    <h1>Building Digital Experiences That Feel Future Ready</h1>
+                    <p class="hero-text">
+                        I am Yugansh Goyal, a CSE student at Gautam Buddha University learning web development,
+                        Java, and practical problem solving through real projects. I like turning simple ideas
+                        into clean websites, useful programs, cinematic edits, animated visuals, and creative
+                        digital experiences that feel clear, modern, and useful.
+                    </p>
+                    <div class="hero-actions">
+                        <a class="primary-btn" href="#projects">Explore Work</a>
+                        <a class="ghost-btn" href="#contact">Let's Talk</a>
+                    </div>
+                    <div class="hero-socials" aria-label="Social links">
+                        <a href="https://www.linkedin.com/in/yugansh-goyal2007" target="_blank" rel="noreferrer" aria-label="LinkedIn">
+                            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.94 8.98H3.56V20h3.38V8.98ZM7.16 5.58A1.95 1.95 0 0 0 5.08 3.6 1.97 1.97 0 0 0 3 5.58a1.96 1.96 0 0 0 2.04 1.98h.02a1.97 1.97 0 0 0 2.1-1.98ZM21 13.68c0-3.33-1.78-4.88-4.15-4.88a3.58 3.58 0 0 0-3.25 1.79h-.05V8.98h-3.24c.04 1.03 0 11.02 0 11.02h3.37v-6.15c0-.33.02-.66.12-.89a1.85 1.85 0 0 1 1.73-1.24c1.22 0 1.71.93 1.71 2.29V20H21v-6.32Z"/></svg>
+                        </a>
+                        <a href="https://www.github.com/YuganshGoyal2007" target="_blank" rel="noreferrer" aria-label="GitHub">
+                            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .9a11.1 11.1 0 0 0-3.51 21.63c.56.1.76-.24.76-.54v-2.1c-3.1.68-3.75-1.32-3.75-1.32-.5-1.28-1.24-1.62-1.24-1.62-1.01-.69.08-.67.08-.67 1.12.08 1.7 1.15 1.7 1.15.99 1.7 2.6 1.21 3.24.93.1-.72.39-1.21.7-1.49-2.47-.28-5.08-1.24-5.08-5.51 0-1.22.44-2.21 1.15-2.99-.12-.28-.5-1.42.11-2.95 0 0 .94-.3 3.06 1.14A10.52 10.52 0 0 1 12 6.18c.95 0 1.89.13 2.78.38 2.12-1.44 3.05-1.14 3.05-1.14.61 1.53.23 2.67.12 2.95.71.78 1.14 1.77 1.14 2.99 0 4.28-2.61 5.22-5.1 5.5.4.35.76 1.03.76 2.08v3.05c0 .3.2.65.77.54A11.1 11.1 0 0 0 12 .9Z"/></svg>
+                        </a>
+                        <a href="https://www.instagram.com/yugansh_goyalvines?igsh=MXg2M3J5YXdmcDNucQ==" target="_blank" rel="noreferrer" aria-label="Instagram">
+                            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7.8 2.5h8.4a5.31 5.31 0 0 1 5.3 5.3v8.4a5.31 5.31 0 0 1-5.3 5.3H7.8a5.31 5.31 0 0 1-5.3-5.3V7.8a5.31 5.31 0 0 1 5.3-5.3Zm0 1.9a3.4 3.4 0 0 0-3.4 3.4v8.4a3.4 3.4 0 0 0 3.4 3.4h8.4a3.4 3.4 0 0 0 3.4-3.4V7.8a3.4 3.4 0 0 0-3.4-3.4H7.8Zm4.2 3.2a4.4 4.4 0 1 1 0 8.8 4.4 4.4 0 0 1 0-8.8Zm0 1.9a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5Zm4.66-2.28a1.08 1.08 0 1 1 0 2.16 1.08 1.08 0 0 1 0-2.16Z"/></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="hero-visual" aria-label="Portrait of Yugansh Goyal">
+                    <span class="mega-word">CREATE</span>
+                    <div class="portrait-ring">
+                        <span class="orbit-dot dot-one"></span>
+                        <span class="orbit-dot dot-two"></span>
+                        <span class="orbit-dot dot-three"></span>
+                        <img src="MyPhoto.jpeg" alt="Yugansh Goyal">
+                    </div>
+                    <div class="stat-card top">
+                        <strong>8+</strong>
+                        <span>Core Skills</span>
+                    </div>
+                    <div class="stat-card bottom">
+                        <strong>5+</strong>
+                        <span>Projects Built</span>
+                    </div>
+                </div>
+
+                <div class="service-strip">
+                    <article>
+                        <span>01</span>
+                        <h3>Web Development</h3>
+                        <p>Responsive websites, interactive layouts, and clean front-end experiences.</p>
+                    </article>
+                    <article>
+                        <span>02</span>
+                        <h3>Programming</h3>
+                        <p>Logic-focused projects using C, Python, Java, JavaScript, and Node.js.</p>
+                    </article>
+                    <article>
+                        <span>03</span>
+                        <h3>Visual Creation</h3>
+                        <p>Video editing, animation, VFX ideas, scene direction, and visual storytelling.</p>
+                    </article>
+                    <article>
+                        <span>04</span>
+                        <h3>Creative Direction</h3>
+                        <p>Concepts, scripts, videography, poetry, songs, dance, and storytelling energy.</p>
+                    </article>
+                </div>
+            </section>
+
+            <section id="about" class="split-grid">
+                <div class="panel about-card">
+                    <p class="eyebrow">About Me</p>
+                    <h2>Learning deeply, building steadily.</h2>
+                    <p>
+                        I am currently pursuing a Bachelor's degree in Computer Science and Engineering.
+                        I enjoy coding, web development, Java programming, and learning from college,
+                        YouTube, documentation, and hands-on practice.
+                    </p>
+                    <p>
+                        My goal is to become a developer who can build useful products with strong logic,
+                        clean design, and a habit of improving every version. This portfolio is one of my
+                        steps toward presenting my learning journey professionally.
+                    </p>
+                    <p>
+                        I am also interested in the creative side of technology: video editing, animation,
+                        VFX, scene direction, and visual storytelling. I want my work to combine code,
+                        design, motion, and clear communication.
+                    </p>
+                    <div class="mini-metrics">
+                        <div><strong>CSE</strong><span>Student</span></div>
+                        <div><strong>2024</strong><span>Portfolio Started</span></div>
+                        <div><strong>24/7</strong><span>Curious Mindset</span></div>
+                    </div>
+                </div>
+
+                <div class="panel focus-card">
+                    <p class="eyebrow">What I Do</p>
+                    <h2>Code, learn, test, improve.</h2>
+                    <div class="focus-list">
+                        <div>
+                            <span class="icon-box">C</span>
+                            <h3>C Programming</h3>
+                            <p>Strong basics through management-system projects.</p>
+                        </div>
+                        <div>
+                            <span class="icon-box">Py</span>
+                            <h3>Python</h3>
+                            <p>Automation logic and student/flight management apps.</p>
+                        </div>
+                        <div>
+                            <span class="icon-box">JS</span>
+                            <h3>Web Projects</h3>
+                            <p>Modern interfaces with clean structure and responsive CSS.</p>
+                        </div>
+                        <div>
+                            <span class="icon-box">AI</span>
+                            <h3>Learning Mindset</h3>
+                            <p>Exploring smarter systems, IoT ideas, and better user experiences.</p>
+                        </div>
+                        <div>
+                            <span class="icon-box">Fx</span>
+                            <h3>VFX & Animation</h3>
+                            <p>Creating motion concepts, visual effects ideas, and animated presentation styles.</p>
+                        </div>
+                        <div>
+                            <span class="icon-box">Ed</span>
+                            <h3>Video Editing</h3>
+                            <p>Editing clips, arranging scenes, improving flow, and shaping stronger stories.</p>
+                        </div>
+                        <div>
+                            <span class="icon-box">Nd</span>
+                            <h3>Node.js Basics</h3>
+                            <p>Learning backend thinking, JavaScript runtime concepts, and server-side logic.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="projects" class="panel section-panel">
+                <div class="section-heading">
+                    <p class="eyebrow">Featured Work</p>
+                    <h2>Projects Section</h2>
+                </div>
+                <div class="project-grid">
+                    <article class="project-card">
+                        <div class="project-preview code-preview">
+                            <span></span><span></span><span></span>
+                        </div>
+                        <h3>Portfolio Website</h3>
+                        <p>Personal website to showcase skills, projects, resume, contact links, and creative identity.</p>
+                        <div class="project-extra">
+                            <p>This website presents my learning journey in a modern portfolio format with animations, project sections, responsive design, social links, resume access, and a contact flow.</p>
+                        </div>
+                        <details class="project-details">
+                            <summary>More details</summary>
+                            <p>Built with HTML, CSS, and JavaScript. I focused on layout design, dark futuristic styling, motion effects, responsive sections, and a better personal brand presentation.</p>
+                        </details>
+                    </article>
+                    <article class="project-card">
+                        <div class="project-preview library-preview"></div>
+                        <h3>Library Management</h3>
+                        <p>C-based system for managing records and core library operations.</p>
+                        <div class="project-extra">
+                            <p>A practice project for handling book records, student issue details, returns, and basic search/update operations using programming fundamentals.</p>
+                        </div>
+                        <details class="project-details">
+                            <summary>More details</summary>
+                            <p>This project helped me understand structured logic, menu-driven programs, data storage thinking, and how real-world record systems can be represented through code.</p>
+                        </details>
+                    </article>
+                    <article class="project-card">
+                        <div class="project-preview flight-preview"></div>
+                        <h3>Flight Management</h3>
+                        <p>Python project focused on structured data handling and process flow.</p>
+                        <div class="project-extra">
+                            <p>Created to practice booking-style flows, passenger information, route thinking, and organized program execution in Python.</p>
+                        </div>
+                        <details class="project-details">
+                            <summary>More details</summary>
+                            <p>The main goal was to improve Python basics, conditional logic, user input handling, and clear step-by-step program flow for a management system.</p>
+                        </details>
+                    </article>
+                    <article class="project-card">
+                        <div class="project-preview student-preview"></div>
+                        <h3>Student Data Management</h3>
+                        <p>Student data management system made for my university use case.</p>
+                        <div class="project-extra">
+                            <p>Designed around university-style student records, including storing basic student details, organizing information, and making data easier to manage.</p>
+                        </div>
+                        <details class="project-details">
+                            <summary>More details</summary>
+                            <p>This project strengthened my understanding of data organization, form-like inputs, search/update thinking, and how educational institutions manage student information digitally.</p>
+                        </details>
+                    </article>
+                    <article class="project-card">
+                        <div class="project-preview code-preview">
+                            <span></span><span></span><span></span>
+                        </div>
+                        <h3>University Main Website Help</h3>
+                        <p>Contributed help and support in the main web work of my university.</p>
+                        <div class="project-extra">
+                            <p>Helped with website-related work by understanding page structure, content flow, visual consistency, and the importance of clear information for students and visitors.</p>
+                        </div>
+                        <details class="project-details">
+                            <summary>More details</summary>
+                            <p>This experience gave me practical exposure to real website needs: presenting important information clearly, checking layout details, improving usability, and supporting a larger web project.</p>
+                        </details>
+                    </article>
+                    <article class="project-card">
+                        <div class="project-preview calc-preview"></div>
+                        <h3>Simple Calculator</h3>
+                        <p>Python calculator project built while practicing programming fundamentals.</p>
+                        <div class="project-extra">
+                            <p>A simple but useful project for practicing input, operators, conditions, and clean output formatting.</p>
+                        </div>
+                        <details class="project-details">
+                            <summary>More details</summary>
+                            <p>It helped me become more comfortable with basic programming flow and the habit of turning a small concept into a working tool.</p>
+                        </details>
+                    </article>
+                    <article class="project-card">
+                        <div class="project-preview iot-preview"></div>
+                        <h3>Smart Air Pollution System</h3>
+                        <p>College team project exploring air pollution extraction and carbon ink generation.</p>
+                        <div class="project-extra">
+                            <p>An IoT-based idea focused on air pollution extraction and converting collected carbon into useful carbon ink with my college friends.</p>
+                        </div>
+                        <details class="project-details">
+                            <summary>More details</summary>
+                            <p>This project combines research, teamwork, environmental thinking, hardware/software planning, and problem solving around a real pollution-related challenge.</p>
+                        </details>
+                    </article>
+                    <article class="project-card">
+                        <div class="project-preview student-preview"></div>
+                        <h3>Creative Edits & Scenes</h3>
+                        <p>Practice work around editing, visual rhythm, scene planning, and storytelling direction.</p>
+                        <div class="project-extra">
+                            <p>Creative experiments where I practice video flow, scene emotion, camera thinking, and how visuals can communicate an idea better.</p>
+                        </div>
+                        <details class="project-details">
+                            <summary>More details</summary>
+                            <p>This connects my interests in videography, editing, VFX, animation, and direction with the same discipline I use while learning code and web design.</p>
+                        </details>
+                    </article>
+                </div>
+                <div class="project-note">
+                    <p>
+                        Every project helps me practice a different part of development: logic, data handling,
+                        interface design, debugging, teamwork, explaining ideas clearly, and presenting work with
+                        confidence. I am building both technical projects and creative visual experiments.
+                    </p>
+                </div>
+            </section>
+
+            <section id="skills" class="split-grid">
+                <div class="panel tools-card">
+                    <p class="eyebrow">Skills</p>
+                    <h2>Technologies & Tools</h2>
+                    <div class="tool-cloud">
+                        <span>C</span>
+                        <span>Python</span>
+                        <span>Java</span>
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                        <span>Git</span>
+                        <span>GitHub</span>
+                        <span>Algorithms</span>
+                        <span>Problem Solving</span>
+                        <span>Responsive Design</span>
+                        <span>Team Projects</span>
+                        <span>Node.js</span>
+                        <span>VFX</span>
+                        <span>Animation</span>
+                        <span>Video Editing</span>
+                        <span>Videography</span>
+                        <span>Scene Direction</span>
+                        <span>Creative Direction</span>
+                        <span>Storytelling</span>
+                    </div>
+                </div>
+
+                <div class="panel process-card">
+                    <p class="eyebrow">My Process</p>
+                    <h2>From Idea to Impact</h2>
+                    <div class="timeline">
+                        <div><strong>01</strong><span>Understand the goal, audience, problem, and expected result.</span></div>
+                        <div><strong>02</strong><span>Plan the structure, visual mood, scene flow, or project logic.</span></div>
+                        <div><strong>03</strong><span>Build the code, edit the visuals, test details, and debug issues.</span></div>
+                        <div><strong>04</strong><span>Polish the final output, improve presentation, and learn from feedback.</span></div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="blog" class="panel quote-panel">
+                <div>
+                    <p class="eyebrow">Blog</p>
+                    <h2>Thoughts in progress.</h2>
+                    <p>
+                        I use this space to share ideas about technology, programming, college learning,
+                        web development, and the small discoveries that happen while building projects.
+                        I also want to write about mistakes I make, fixes I discover, and the discipline
+                        that turns practice into confidence. My notes can include coding lessons, editing
+                        experiments, animation ideas, project progress, and creative direction learnings.
+                    </p>
+                </div>
+                <div class="orbital-art" aria-hidden="true">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </section>
+
+            <section id="contact" class="panel contact-panel">
+                <div>
+                    <p class="eyebrow">Get In Touch</p>
+                    <h2>Let's build something amazing together.</h2>
+                    <p>Have a project idea, suggestion, or feedback? Reach me through any platform below.</p>
+                    <div class="contact-list">
+                        <a href="mailto:yuganshgoyal2007@gmail.com">
+                            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.5 5h15A2.5 2.5 0 0 1 22 7.5v9A2.5 2.5 0 0 1 19.5 19h-15A2.5 2.5 0 0 1 2 16.5v-9A2.5 2.5 0 0 1 4.5 5Zm0 2c-.18 0-.34.03-.49.08L12 12.26l7.99-5.18A1.5 1.5 0 0 0 19.5 7h-15Zm15 10a.5.5 0 0 0 .5-.5V9.16l-7.46 4.84a1 1 0 0 1-1.08 0L4 9.16v7.34a.5.5 0 0 0 .5.5h15Z"/></svg>
+                            <span>Email</span>
+                            <small>yuganshgoyal2007@gmail.com</small>
+                        </a>
+                        <a href="tel:+919548425711">
+                            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.01-.24c1.11.37 2.31.56 3.58.56a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1C10.61 21 3 13.39 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.27.19 2.47.56 3.58a1 1 0 0 1-.24 1.01l-2.2 2.2Z"/></svg>
+                            <span>Phone</span>
+                            <small>+91 95484 25711</small>
+                        </a>
+                    </div>
+                    <div class="social-grid" aria-label="Social profile links">
+                        <a href="https://www.linkedin.com/in/yugansh-goyal2007" target="_blank" rel="noreferrer">
+                            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.94 8.98H3.56V20h3.38V8.98ZM7.16 5.58A1.95 1.95 0 0 0 5.08 3.6 1.97 1.97 0 0 0 3 5.58a1.96 1.96 0 0 0 2.04 1.98h.02a1.97 1.97 0 0 0 2.1-1.98ZM21 13.68c0-3.33-1.78-4.88-4.15-4.88a3.58 3.58 0 0 0-3.25 1.79h-.05V8.98h-3.24c.04 1.03 0 11.02 0 11.02h3.37v-6.15c0-.33.02-.66.12-.89a1.85 1.85 0 0 1 1.73-1.24c1.22 0 1.71.93 1.71 2.29V20H21v-6.32Z"/></svg>
+                            <span>LinkedIn</span>
+                        </a>
+                        <a href="https://www.github.com/YuganshGoyal2007" target="_blank" rel="noreferrer">
+                            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .9a11.1 11.1 0 0 0-3.51 21.63c.56.1.76-.24.76-.54v-2.1c-3.1.68-3.75-1.32-3.75-1.32-.5-1.28-1.24-1.62-1.24-1.62-1.01-.69.08-.67.08-.67 1.12.08 1.7 1.15 1.7 1.15.99 1.7 2.6 1.21 3.24.93.1-.72.39-1.21.7-1.49-2.47-.28-5.08-1.24-5.08-5.51 0-1.22.44-2.21 1.15-2.99-.12-.28-.5-1.42.11-2.95 0 0 .94-.3 3.06 1.14A10.52 10.52 0 0 1 12 6.18c.95 0 1.89.13 2.78.38 2.12-1.44 3.05-1.14 3.05-1.14.61 1.53.23 2.67.12 2.95.71.78 1.14 1.77 1.14 2.99 0 4.28-2.61 5.22-5.1 5.5.4.35.76 1.03.76 2.08v3.05c0 .3.2.65.77.54A11.1 11.1 0 0 0 12 .9Z"/></svg>
+                            <span>GitHub</span>
+                        </a>
+                        <a href="https://www.instagram.com/yugansh_goyalvines?igsh=MXg2M3J5YXdmcDNucQ==" target="_blank" rel="noreferrer">
+                            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7.8 2.5h8.4a5.31 5.31 0 0 1 5.3 5.3v8.4a5.31 5.31 0 0 1-5.3 5.3H7.8a5.31 5.31 0 0 1-5.3-5.3V7.8a5.31 5.31 0 0 1 5.3-5.3Zm0 1.9a3.4 3.4 0 0 0-3.4 3.4v8.4a3.4 3.4 0 0 0 3.4 3.4h8.4a3.4 3.4 0 0 0 3.4-3.4V7.8a3.4 3.4 0 0 0-3.4-3.4H7.8Zm4.2 3.2a4.4 4.4 0 1 1 0 8.8 4.4 4.4 0 0 1 0-8.8Zm0 1.9a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5Zm4.66-2.28a1.08 1.08 0 1 1 0 2.16 1.08 1.08 0 0 1 0-2.16Z"/></svg>
+                            <span>Instagram</span>
+                        </a>
+                    </div>
+                </div>
+
+                <form id="contactForm" class="contact-form">
+                    <label>
+                        <span>Your Name</span>
+                        <input type="text" name="name" placeholder="Your Name">
+                    </label>
+                    <label>
+                        <span>Your Email</span>
+                        <input type="email" name="email" placeholder="Your Email">
+                    </label>
+                    <label>
+                        <span>Your Message</span>
+                        <textarea name="message" placeholder="Your Message"></textarea>
+                    </label>
+                    <button type="submit">Send Message</button>
+                </form>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="brand">
+                <span class="brand-mark"><img src="MyPhoto.jpeg" alt=""></span>
+                <span>YUGANSH GOYAL</span>
+            </div>
+            <p>Design. Code. Learn. Improve.</p>
+            <p>&copy; 2026 Yugansh Goyal. All rights reserved.</p>
+        </footer>
     </div>
-      <p style="text-align: center;">&copy; 2024 Yugansh Goyal. All rights reserved.<br>
-        I have made this web by my own so plst give me credits if you are using any part of this web.<br>
-        If ther is any problem regarding this web please contact me.<br>
-        And if you want to any suggestion so pls give me feedback.on my emailor contact me on my social media handles.<br>
-        </p>
-        <h2 style="text-align: center;">   Thank You! </h2>
 
     <script>
-        function scrollToSection(id) {
-            document.getElementById(id).scrollIntoView({
-                behavior: 'smooth'
-    });
-}
-</script>
+        window.scrollTo({ top: 0, left: 0 });
+
+        const revealTargets = document.querySelectorAll(".panel, .service-strip article, .project-card, .tool-cloud span, .timeline > div");
+        const tiltTargets = document.querySelectorAll(".project-card, .service-strip article, .focus-list > div, .contact-list a, .social-grid a");
+        const contactForm = document.getElementById("contactForm");
+
+        const revealObserver = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("is-visible");
+                    revealObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.12 });
+
+        revealTargets.forEach((target, index) => {
+            target.style.setProperty("--reveal-delay", `${Math.min(index * 45, 360)}ms`);
+            revealObserver.observe(target);
+        });
+
+        tiltTargets.forEach((card) => {
+            card.addEventListener("pointermove", (event) => {
+                const rect = card.getBoundingClientRect();
+                const x = ((event.clientX - rect.left) / rect.width - 0.5) * 10;
+                const y = ((event.clientY - rect.top) / rect.height - 0.5) * -10;
+                card.style.setProperty("--tilt-x", `${y}deg`);
+                card.style.setProperty("--tilt-y", `${x}deg`);
+                card.style.setProperty("--shine-x", `${event.clientX - rect.left}px`);
+                card.style.setProperty("--shine-y", `${event.clientY - rect.top}px`);
+            });
+
+            card.addEventListener("pointerleave", () => {
+                card.style.setProperty("--tilt-x", "0deg");
+                card.style.setProperty("--tilt-y", "0deg");
+            });
+        });
+
+        contactForm.addEventListener("submit", (event) => {
+            event.preventDefault();
+
+            const formData = new FormData(contactForm);
+            const name = formData.get("name") || "Portfolio visitor";
+            const email = formData.get("email") || "No email provided";
+            const message = formData.get("message") || "No message written";
+            const subject = `Portfolio message from ${name}`;
+            const body = `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`;
+
+            window.location.href = `mailto:yuganshgoyal2007@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+        });
+    </script>
 </body>
 </html>
